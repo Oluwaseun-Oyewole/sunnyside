@@ -873,4 +873,101 @@ h1, h2, h3 {
     margin-top: -0.4rem;
   }
 }
+
+.client {
+  background: #f8f4e7;
+  text-align: center;
+  padding: 8rem;
+}
+
+@media (max-width: 39.9375em) {
+  .client {
+    padding: 1.5rem;
+  }
+}
+
+.client > h1 {
+  text-transform: uppercase;
+  padding-bottom: 4rem;
+  color: #a7abae;
+  letter-spacing: 0.3rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 39.9375em) {
+  .client > h1 {
+    font-size: 1rem;
+    padding-top: 4rem;
+  }
+}
+
+.client__grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 69.9375em) {
+  .client__grid {
+    display: block;
+  }
+}
+
+.client__grid > div > img {
+  width: 15%;
+  border-radius: 50%;
+  margin-bottom: 2.6rem;
+}
+
+@media (max-width: 39.9375em) {
+  .client__grid > div > img {
+    width: 25%;
+    margin-bottom: 1rem;
+  }
+}
+
+.client__grid > div p {
+  line-height: 1.5;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 200;
+  color: #19536b;
+  width: 80%;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  margin-bottom: 5rem;
+}
+
+@media (max-width: 69.9375em) {
+  .client__grid > div p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .client__grid > div p {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .client__grid > div > div:last-child {
+    padding-bottom: 4rem;
+  }
+}
+
+.client__grid > div > div:last-child h2 {
+  font-size: 1.3rem;
+}
+
+.client__grid > div > div:last-child > p {
+  margin-top: -1rem;
+  font-size: 1rem;
+  color: #a7abae;
+}
 /*# sourceMappingURL=style.css.map */
