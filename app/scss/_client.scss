@@ -1,7 +1,7 @@
 .client{
     background: $mobileBackground;
     text-align: center;
-    padding:8rem;
+    padding:7rem;
 
     @include breakpoint-down(small){
         padding: 1.5rem;

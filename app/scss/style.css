@@ -877,7 +877,7 @@ h1, h2, h3 {
 .client {
   background: #f8f4e7;
   text-align: center;
-  padding: 8rem;
+  padding: 7rem;
 }
 
 @media (max-width: 39.9375em) {
@@ -969,5 +969,31 @@ h1, h2, h3 {
   margin-top: -1rem;
   font-size: 1rem;
   color: #a7abae;
+}
+
+.extra {
+  margin-top: -4rem;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+@media (max-width: 69.9375em) {
+  .extra {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 39.9375em) {
+  .extra {
+    margin-top: -2rem;
+  }
+}
+
+.extra > img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
