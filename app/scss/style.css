@@ -996,4 +996,54 @@ h1, h2, h3 {
 .extra > img {
   width: 100%;
 }
+
+.footer {
+  text-align: center;
+  background: #68b1a2;
+  padding: 4rem;
+}
+
+.footer > h2 {
+  color: #25564b;
+  font-size: 2.3rem;
+  margin-bottom: 2.5rem;
+}
+
+.footer__links {
+  margin-bottom: 4rem;
+}
+
+.footer__links > a {
+  color: #25564b;
+  font-family: 'Barlow', sans-serif;
+}
+
+.footer__links > a:not(:last-child) {
+  margin-right: 3rem;
+}
+
+@media (max-width: 69.9375em) {
+  .footer__links > a:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+.footer__socials {
+  margin-bottom: 2rem;
+}
+
+.footer__socials > a {
+  font-size: 1.5rem;
+  color: #25564b;
+}
+
+.footer__socials > a:not(:last-child) {
+  margin-right: 2rem;
+}
+
+@media (max-width: 69.9375em) {
+  .footer__socials > a:not(:last-child) {
+    margin-right: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
