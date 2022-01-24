@@ -17,6 +17,13 @@ body{
 
     font-family: 'Barlow', sans-serif;
     font-family: 'Fraunces', serif;
+
+
+
+    &.noscroll{
+        overflow: hidden;
+    }
+
 }
 
 
@@ -73,11 +80,9 @@ ul{list-style: none;}
 }
 
 .container{
-
     max-width: 90.375rem;
     margin: 0 auto;
     
-
 }
 
 // visibility

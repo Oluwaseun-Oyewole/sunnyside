@@ -1,7 +1,4 @@
 .section{
-
-    // width: 150%;
-    width: fit-content;
     overflow:hidden;
 
     &__grid1{
@@ -22,6 +19,8 @@
 
        .card1{    
 
+        background:$mobileBackground;
+
         @include breakpoint-down(small){
             order: 2;
             height:60vh;
@@ -36,7 +35,7 @@
                 flex-direction: column;
                 justify-content: center;
                 text-align: left;
-                width: 45%;
+                width: 50%;
                 position: relative;
                 left: 50%;
                 transform: translate(-50%);
@@ -60,7 +59,8 @@
                         font-family: 'Barlow', sans-serif;
                         line-height:1.7;
                         font-weight: 700;
-                        color: $GrayishBlue;
+                        // color: $GrayishBlue;
+                        color:$VeryDarkDesaturatedBlue;
 
 
                         @include breakpoint-down(small){
@@ -74,6 +74,7 @@
                         text-transform: uppercase;
                         color: $VeryDarkDesaturatedBlue;
                         position: relative;
+                        margin-top: 2rem;
 
                         @include breakpoint-down(small){
                             margin-top:1.7rem;
@@ -108,6 +109,8 @@
           
              }
 
+
+
        .card2{
             background: url('/images/desktop/image-transform.jpg');
             width: 100%;
@@ -122,7 +125,6 @@
                 height: 60vh;
             }
         }
-
 
 
     }
@@ -148,6 +150,7 @@
 
                 
             width:100%;
+            background:$mobileBackground;
 
             @include breakpoint-down(small){
                 background:$mobileBackground;
@@ -158,7 +161,7 @@
                     flex-direction: column;
                     justify-content: center;
                     text-align: left;
-                    width: 45%;
+                    width: 50%;
                     position: relative;
                     left: 50%;
                     transform: translate(-50%);
@@ -186,8 +189,9 @@
                             font-family: 'Barlow', sans-serif;
                             line-height:1.7;
                             font-weight: 200;
-                            color: $GrayishBlue;
+                            // color: $GrayishBlue;
 
+                            color:$VeryDarkDesaturatedBlue;
 
                             @include breakpoint-down(small){
                                 margin-top: -0.1rem;
@@ -200,6 +204,7 @@
                             text-transform: uppercase;
                             color: $VeryDarkDesaturatedBlue;
                             position:relative;
+                            margin-top: 2rem;
 
 
                             @include breakpoint-down(small){
@@ -360,9 +365,7 @@
 
                 left: 50%;
                 transform: translate(-50%);
-                top: 70%;
-
-
+                top: 67%;
 
                 
                 @include breakpoint-down(small){

@@ -19,6 +19,10 @@ body {
   font-family: 'Fraunces', serif;
 }
 
+body.noscroll {
+  overflow: hidden;
+}
+
 *, a:visited, a:hover {
   text-decoration: none;
 }
@@ -157,7 +161,9 @@ h1, h2, h3 {
 }
 
 .header__links > ul > li > a:hover {
-  color: lightcyan;
+  color: cyan;
+  -webkit-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
 }
 
 .header__cta {
@@ -168,6 +174,14 @@ h1, h2, h3 {
   padding: 0.7rem 1rem;
   height: 3.075rem;
   width: 8.025rem;
+}
+
+.header__cta:hover {
+  background: cyan;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 700ms ease-in-out;
+  transition: all 700ms ease-in-out;
 }
 
 .header__content {
@@ -427,15 +441,7 @@ h1, h2, h3 {
   }
 }
 
-.mobile-fadeOut {
-  -webkit-animation: mobilefadeOut 500ms ease-in-out;
-          animation: mobilefadeOut 500ms ease-in-out;
-}
-
 .section {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   overflow: hidden;
 }
 
@@ -466,6 +472,7 @@ h1, h2, h3 {
 }
 
 .section__grid1 .card1 {
+  background: #f8f4e7;
   width: 100%;
 }
 
@@ -493,7 +500,7 @@ h1, h2, h3 {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
-  width: 45%;
+  width: 50%;
   position: relative;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -522,7 +529,7 @@ h1, h2, h3 {
   font-family: 'Barlow', sans-serif;
   line-height: 1.7;
   font-weight: 700;
-  color: #a7abae;
+  color: #23303e;
 }
 
 @media (max-width: 39.9375em) {
@@ -537,6 +544,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   color: #23303e;
   position: relative;
+  margin-top: 2rem;
 }
 
 @media (max-width: 39.9375em) {
@@ -606,6 +614,7 @@ h1, h2, h3 {
 
 .section__grid2 .card4 {
   width: 100%;
+  background: #f8f4e7;
 }
 
 @media (max-width: 39.9375em) {
@@ -627,7 +636,7 @@ h1, h2, h3 {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: left;
-  width: 45%;
+  width: 50%;
   position: relative;
   left: 50%;
   -webkit-transform: translate(-50%);
@@ -658,7 +667,7 @@ h1, h2, h3 {
   font-family: 'Barlow', sans-serif;
   line-height: 1.7;
   font-weight: 200;
-  color: #a7abae;
+  color: #23303e;
 }
 
 @media (max-width: 39.9375em) {
@@ -672,6 +681,7 @@ h1, h2, h3 {
   text-transform: uppercase;
   color: #23303e;
   position: relative;
+  margin-top: 2rem;
 }
 
 @media (max-width: 39.9375em) {
@@ -842,7 +852,7 @@ h1, h2, h3 {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  top: 70%;
+  top: 67%;
 }
 
 @media (max-width: 39.9375em) {
